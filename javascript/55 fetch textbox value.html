@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <script>
+        // fetch textbox value
+        function display()
+        {
+            var a = document.getElementById("t1").value;
+            var b = document.getElementById("t2").value;
+           /* if (a < 10) {
+                document.write("a is less than 10");
+            } else
+            {
+                document.write("a is not less than 10");
+            }*/
+            /*var b = 0;
+            while (b < a)
+            {
+                document.write(b);
+                b++;
+            }*/
+           /* if (a%2 == 0)
+            {
+                document.write("even number");
+            } else
+            {
+                document.write("odd number");
+            }*/
+             if (a < b)
+              {
+            document.write("a is less than b");
+        } else
+        {
+            document.write("b is  less than a");
+        }
+        }
+    </script>
+</head>
+<body>
+    Enter Value1: <input type="text" id="t1" />
+    Enter Value2: <input type="text" id="t2" />
+    <button onclick="display();">click me</button>
+</body>
+</html>

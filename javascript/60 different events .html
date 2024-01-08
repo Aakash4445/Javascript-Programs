@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+<script>//different events of components
+    //onload,onckick,onsubmit,onchanged,onfocus, etc,
+    function dis1()
+    {
+        alert("body tag loaded...");
+    }
+    function dis2()
+    {
+        alert("text box click...");
+    }
+    function dis3() {
+        alert("radio button click events...");
+    }
+</script>
+</head>
+<body onload="dis1();">
+    <form name="myform">
+        <input type="text" onclick="dis2();">
+        <input type="radio" onclick="dis3()";>male
+    </form>
+</body>
+</html>

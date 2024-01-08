@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+   <script>
+       function display()
+       {
+           var t_value = document.forms["myform"]["t1"].value;//document.getElementById("t1").value;
+           var r_value = document.forms["myform"]["r"].value;
+           var str = "";
+           str = str + t_value + r_value;
+           
+           if (document.forms["myform"]["c1"].checked)
+           {
+              str=str+document.forms["myform"]["c1"].value;
+
+           }
+           if (document.forms["myform"]["c2"].checked)
+           {
+               str=str+document.forms["myform"]["c2"].value;
+           }
+          
+           //document.write(t_value);
+           //document.write(r_value);
+           var sel_value = document.forms["myform"]["pl"].value;
+           str = str + sel_value;
+           document.write(str);
+           
+       }
+   </script>
+    </head>
+   <body>
+       <form id="myform">
+           Enter name<input type="text" id="t1" /><br>
+           select gender<input type="radio" name="r1" id="r" value="male" />male
+                        <input type="radio" name="r1" id="r" value="female" />female<br>
+           select language
+           <input type="checkbox" id="c1" value="hindi">hindi
+           <input type="checkbox" id="c2" value="english">english<br>
+           select programming langvage
+           <select id="pl">
+               <option value="c">c</option>
+               <option value="c++">c++</option>
+               <option value="java">java</option>
+           </select><br>
+       </form>
+       <button onclick="display();">click me</button>
+   </body>
+</html>

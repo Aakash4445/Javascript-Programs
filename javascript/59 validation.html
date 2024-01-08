@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+ <script>
+     function myvalid()
+     {
+         var v = document.myform.t1.value;
+        /* if (v == "") {
+             alert("enter value in textbox");
+         } else if (isNaN(v)) //nan:not a number
+         {
+             alert("enter number only");
+         } else if (v.length == 10)
+         {
+             alert("number ok");
+         } else 
+         {
+             alert("enter 10 digit numbers only");
+         }*/
+         var r = /^[A-Za-z]+$/;//regular expression validation
+         if (v.match(r)) {
+             alert("value ok");
+         } else
+         {
+             alert("value not ok");
+         }
+     }
+ </script>
+</head>
+<body>
+    <form name="myform">
+        <input type="text" name="t1">
+        <button onclick="myvalid();">ok</button>
+    </form>
+</body>
+</html>

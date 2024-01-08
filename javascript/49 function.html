@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <script>
+        function my(a,b)
+        {
+           // document.getElementById("mypara").innerHTML ="hi";
+            // document.write(a+b);
+            return a * b;
+        }
+        function display()
+        {
+            my(4, 5);
+            document.write(my(4, 5));
+            document.getElementById("mypara").innerHTML = my(4, 5);
+        }
+    </script>
+</head>
+<body>
+    <p id="mypara"></p>
+    <button onclick="my(3,4);">click me </button>
+    <button onclick="display();">click me </button>
+</body>
+</html>

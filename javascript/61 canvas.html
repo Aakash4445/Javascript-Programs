@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <style>
+        canvas
+        {
+            border:2px solid red;
+        }
+    </style>
+<script>
+    function dis()
+    {//canvas in javascript
+        var v = document.getElementById("mycanvas");
+        var con = v.getContext("2d");
+        con.fillStyle = "red";
+        con.fillRect(10, 10, 100, 100);
+        con.fillStyle = "blue";
+        con.font = "bold 50px Arial";
+        //con.fillRect(20, 20, 150, 150);
+        con.fillText("hello", 50, 50);
+        con.strokeText("world", 100, 100);
+    }
+</script>
+</head>
+<body>
+    <canvas id="mycanvas">
+
+    </canvas><br />
+    <button onclick="dis();">click me</button>
+</body>
+</html>
